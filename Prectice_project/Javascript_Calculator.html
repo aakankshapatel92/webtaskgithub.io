@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Calculator</title>
+	<style type="text/css">
+		input {
+			width: 20px;
+			background-color: pink;
+			color: white;
+			border: 3px solid gray;
+			border-radius: 5px;
+			padding: 26px;
+			margin: 5px;
+			font-size: 15px;
+		}
+		#ans{
+			width: 250px;
+			border: 5px solid black
+			border-radius :3px;
+			padding: 20px;
+			margin: auto;
+		}
+     .clear{
+         width: 290px;
+			border: 5px solid black
+			border-radius :3px;
+			padding: 20px;
+			margin: auto;
+
+     }
+		
+	</style>
+</head>
+<body>
+	<form name="form1">
+		<input type="text" name="answer" id="ans"><br>
+		<input type="button" name="" value="1" onclick="form1.answer.value += '1'">
+		<input type="button" name="" value="2"onclick="form1.answer.value += '2'">
+        <input type="button" name="" value="3" onclick="form1.answer.value += '3'">
+        <input type="button" name="" value="+" onclick="form1.answer.value += '+'"><br>
+
+        <input type="button" name="" value="4" onclick="form1.answer.value += '4'">
+		<input type="button" name="" value="5" onclick="form1.answer.value += '5'">
+        <input type="button" name="" value="6" onclick="form1.answer.value += '6'">
+        <input type="button" name="" value="-" onclick="form1.answer.value += '-'"><br>
+
+        <input type="button" name="" value="7" onclick="form1.answer.value += '7'">
+		<input type="button" name="" value="8" onclick="form1.answer.value += '8'">
+        <input type="button" name="" value="9" onclick="form1.answer.value += '9'">
+        <input type="button" name="" value="*" onclick="form1.answer.value += '*'" ><br>
+
+        <input type="button" name="" value="/" onclick="form1.answer.value += '/'">
+		<input type="button" name="" value="0" onclick="form1.answer.value += '0'">
+        <input type="button" name="" value="." onclick="form1.answer.value += '.'">
+        <input type="button" name="" value="=" onclick="form1.answer.value =eval(form1.answer.value)"><br>
+        <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " class="clear">  
+	</form>
+
+</body>
+</html>
