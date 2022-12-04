@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register form</title>
+</head>
+<body>
+<form>
+	<h1>Employee Registration Form</h1><hr>
+	<label>Frist Name:</label>
+	<input type="text" name="fname" placeholder="Enter Frist Name" required=""><br><br>
+	<label>Last Name:</label>
+	<input type="text" name="lname" placeholder="Enter Last Name" required=""><br><br>
+    <label>Department</label>
+    <select>
+    	<option selected="">Department</option>
+    	<option>Management</option>
+    	<option>Human Resource</option>
+    	<option>Customer support</option>
+    	<option>Development</option>
+    </select><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female<br><br>
+    
+    <label>Phone:</label>
+    <input type="text" name="country_code" value="+91" size="2">
+    <input type="tel" name="phone" size="11" pattern="[0-9]{4}-[0-9]-6" placeholder="1234-569856"><br><br>
+    <label>Current Address:</label>
+     <textarea cols="80" rows="5" value="address" placeholder="Current Address" required=" "></textarea><br><br>
+
+     <label>Drop Your Resume:</label>
+     <input type="file" name="myfile" id="myfile">
+     <br><br>
+   <label>Email-id</label>
+   <input type="email" name="emailid"  placeholder="Email id" required=""><br><br>
+   <label>Password</label>
+   <input type="password" name="password" placeholder="******" required=""><br><br>
+   <button>submit</button>
+
+
+</form>
+</body>
+</html>
